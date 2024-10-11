@@ -22,12 +22,14 @@ import java.util.concurrent.TimeUnit
 class MainActivity : AppCompatActivity() {
 
     private val binding by viewBinding(ActivityMainBinding::bind)
-    private val workRequest = PeriodicWorkRequestBuilder<BootWorker>(1, TimeUnit.MINUTES).build()
+    private val workRequest = PeriodicWorkRequestBuilder<BootWorker>(15, TimeUnit.MINUTES).build()
     private val requestPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission(),
     ) { isGranted: Boolean ->
         if (isGranted) {
+            WorkManager.getInstance(this).enqueue(workRequest)
         } else {
+            // Give the explanation
         }
     }
 

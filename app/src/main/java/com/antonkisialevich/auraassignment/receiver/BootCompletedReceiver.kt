@@ -1,4 +1,4 @@
-package com.antonkisialevich.auraassignment.data.receiver
+package com.antonkisialevich.auraassignment.receiver
 
 import android.content.BroadcastReceiver
 import android.content.Context

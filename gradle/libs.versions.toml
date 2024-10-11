@@ -29,6 +29,8 @@ navigation = "2.8.2"
 datastore-preferences = "1.1.1"
 # Image loading
 glide = "4.16.0"
+# Room database
+room = "2.6.1"
 
 [libraries]
 # Core
@@ -64,6 +66,10 @@ datastorePreferences = { group = "androidx.datastore", name = "datastore-prefere
 # Image loading
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 glideOkhttp = { group = "com.github.bumptech.glide", name = "okhttp3-integration", version.ref = "glide" }
+# Room database
+room = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".data.receiver.BootCompletedReceiver"
+        <receiver android:name=".receiver.BootCompletedReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>

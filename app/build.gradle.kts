@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+//        buildConfig = true
+    }
 }
 
 dependencies {
@@ -42,7 +46,31 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.retrofit)
+    implementation(libs.retrofitSerialization)
+    implementation(libs.okhttp)
+    implementation(libs.okhttpLogging)
+
+    implementation(libs.kotlinxSerialization)
+
+    implementation(libs.coroutines)
+
+    implementation(libs.lifecycle)
+    implementation(libs.lifecycleViewModel)
+    implementation(libs.lifecycleSavedState)
+
+    implementation(libs.viewBinding)
+
+    implementation(libs.navigationFragment)
+    implementation(libs.navigationUi)
+
+    implementation(libs.datastorePreferences)
+
+    implementation(libs.glide)
+    implementation(libs.glideOkhttp)
 }

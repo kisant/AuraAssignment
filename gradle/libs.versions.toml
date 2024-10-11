@@ -31,6 +31,8 @@ datastore-preferences = "1.1.1"
 glide = "4.16.0"
 # Room database
 room = "2.6.1"
+# Worker
+worker = "2.7.0"
 
 [libraries]
 # Core
@@ -70,6 +72,8 @@ glideOkhttp = { group = "com.github.bumptech.glide", name = "okhttp3-integration
 room = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+# Worker
+worker = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "worker" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

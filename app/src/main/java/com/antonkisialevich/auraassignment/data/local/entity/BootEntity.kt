@@ -7,6 +7,6 @@ import com.antonkisialevich.auraassignment.data.local.BootsRoomDatabase.Companio
 
 @Entity(tableName = BOOT_TABLE_NAME)
 data class BootEntity(
-    @PrimaryKey(autoGenerate = true) @ColumnInfo("id") val id: Long,
+    @PrimaryKey(autoGenerate = true) @ColumnInfo("id") val id: Long = 1,
     @ColumnInfo("boot_time") val bootTime: Long
 )

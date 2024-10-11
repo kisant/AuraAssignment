@@ -79,4 +79,6 @@ dependencies {
     implementation(libs.roomKtx)
     annotationProcessor(libs.roomCompiler)
     ksp(libs.roomCompiler)
+
+    implementation(libs.worker)
 }
